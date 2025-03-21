@@ -911,18 +911,12 @@
   resolved "https://registry.yarnpkg.com/@faststore/lighthouse/-/lighthouse-3.5.0.tgz#43b809ce5a7e4e5691560f2571822efc6a03749d"
   integrity sha512-4XO+j6J+2zPLRMHxjsZkJYCJMz8skyWGjvumwnYZFrJ8jLtb6dzm25w57G278FcmgtH3ZWn/POff8Mdcu5/bTw==
 
-"@faststore/sdk@^3.4.4":
-  version "3.4.4"
-  resolved "https://registry.yarnpkg.com/@faststore/sdk/-/sdk-3.4.4.tgz#f976b9c9f176db72bd3b3b49b2eda988c5d3bfc5"
-  integrity sha512-6Ots9PFPDnSk4Y/GrfKOfj+WakTH1zD0NDwvjr9H2uG0LB0zdYcorPjYCmoFJTkdMko09fOf/fWAjomTYu4I/w==
+"@faststore/sdk@^3.28.0", "@faststore/sdk@^3.4.4", "@faststore/sdk@^3.5.0":
+  version "3.28.0"
+  resolved "https://registry.yarnpkg.com/@faststore/sdk/-/sdk-3.28.0.tgz#0e3a2ce484b3a3cb89d60e49bdc2087db4a9e8e1"
+  integrity sha512-mqxx+v0DpBv3M3EhvVXhwOK5NFrMW7MJOeVSoEiNGh3doMLaBYziQBYQVfa2TY3C8lrcwGjlNL5rQ0+m/5FXTQ==
   dependencies:
-    idb-keyval "^5.1.3"
-
-"@faststore/sdk@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@faststore/sdk/-/sdk-3.5.0.tgz#89c5f1218cfb78a1f1233cb397ca6fc4133b7a76"
-  integrity sha512-Nz2GOt5rLC6ooGBP9TR8V9pn5wvNEfxt88K/6H4WkoniBRXJuuELBBh45om/kj1OCXhVLBB0R6vs0NCq2b9OEA==
-  dependencies:
+    "@types/react" "^18.2.42"
     idb-keyval "^5.1.3"
 
 "@faststore/ui@^3.4.4":
