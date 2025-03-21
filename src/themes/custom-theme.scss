@@ -1,0 +1,169 @@
+// ----------------------------------------------------------
+// GLOBAL TOKENS
+// Custom Theme
+// ----------------------------------------------------------
+
+@layer theme {
+  .theme {
+    // --------------------------------------------------------
+    // Colors (Branding Core)
+    // --------------------------------------------------------
+    --fs-color-main-0: #ffffff;
+    --fs-color-main-1: #c1d3c9;
+    --fs-color-main-2: #008a39;
+    --fs-color-main-3: #12ac52;
+    --fs-color-main-4: #09632e;
+
+    --fs-color-accent-0: #ffe6e6;
+    --fs-color-accent-1: #c2dfa4;
+    --fs-color-accent-2: #e8f7da;
+    --fs-color-accent-3: #c8d9cb;
+    --fs-color-accent-4: #008a39;
+
+    --fs-color-neutral-0: #ffffff;
+    --fs-color-neutral-1: #f1f2f3;
+    --fs-color-neutral-2: #e3e6e8;
+    --fs-color-neutral-3: #c7ccd1;
+    --fs-color-neutral-4: #9099a2;
+    --fs-color-neutral-5: #74808b;
+    --fs-color-neutral-6: #5d666f;
+    --fs-color-neutral-7: #484e49;
+
+    // --------------------------------------------------------
+    // Typography (Branding Core)
+    // --------------------------------------------------------
+
+    // --------------------------------------------------------
+    // Spacing (UI Essentials)
+    // --------------------------------------------------------
+
+    // --------------------------------------------------------
+    // Grid & Layout (UI Essentials)
+    // --------------------------------------------------------
+
+    // --------------------------------------------------------
+    // Interactive Controls (UI Essentials)
+    // --------------------------------------------------------
+
+    // --------------------------------------------------------
+    // Refinements
+    // --------------------------------------------------------
+
+    // --------------------------------------------------------
+    // FS UI Components
+    // --------------------------------------------------------
+    // Add here the customizations for FastStore UI components.
+
+    [data-testid="fs-cart-sidebar"] {
+      [data-fs-empty-state="true"] {
+        flex-shrink: initial;
+        background-color: transparent;
+
+        [data-fs-empty-state-title="true"] {
+          width: 100%;
+
+          &:before {
+            content: "";
+            background: url("https://dahortapraporta.vteximg.com.br/arquivos/cart-empty.png");
+            height: 67px;
+            width: var(--dt-dimension-7);
+            background-repeat: no-repeat;
+          }
+
+          p {
+            visibility: hidden;
+            position: relative;
+            width: 100%;
+          }
+
+          p::before {
+            content: "Sua sacola está vazia";
+            visibility: visible;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            font-family: var(--dt-font-primary);
+            color: var(--fs-color-main-6);
+          }
+        }
+
+        [data-fs-button="true"] {
+          &:hover {
+            [data-fs-button-wrapper="true"] {
+              background-color: var(--fs-color-main-6);
+
+              span {
+                color: var(--dt-color-neutral-0);
+              }
+            }
+          }
+
+          [data-fs-button-wrapper="true"] {
+            position: relative;
+
+            &:hover {
+              background-color: var(--fs-color-main-6);
+            }
+
+            span {
+              visibility: hidden;
+            }
+
+            span::before {
+              content: "Comece a Comprar";
+              visibility: visible;
+              display: inline-block;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+
+    [data-testid="fs-order-summary-subtotal-label"],
+    [data-testid="fs-order-summary-discount-label"] {
+      position: relative;
+      color: transparent;
+    }
+
+    [data-testid="fs-order-summary-subtotal-label"]::before {
+      content: "Subtotal";
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: var(--fs-color-neutral-7);
+    }
+
+    [data-testid="fs-order-summary-discount-label"]::before {
+      content: "Desconto";
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: var(--fs-color-neutral-7);
+    }
+  }
+
+  .section-scroll-to-top-button {
+    button[data-fs-button="true"] {
+      span {
+        visibility: hidden;
+
+        &::before {
+          content: "Voltar ao topo";
+          visibility: visible;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.featuresSection {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  .sectionHeading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--fs-color-main-2);
+  }
+
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .featureItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .iconContainer {
+      width: 100px;
+      height: 100px;
+      background-color: var(--fs-color-main-2);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      svg {
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+      }
+    }
+
+    .featureTitle {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--fs-color-main-2);
+      margin-bottom: 1rem;
+    }
+
+    .featureDescription {
+      font-size: 1rem;
+      color: var(--fs-color-neutral-7);
+    }
+  }
+}

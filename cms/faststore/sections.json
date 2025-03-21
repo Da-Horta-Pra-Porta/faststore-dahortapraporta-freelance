@@ -1,0 +1,433 @@
+[
+  {
+    "name": "AboutSection",
+    "requiredScopes": [
+      "landing"
+    ],
+    "schema": {
+      "title": "About Section",
+      "description": "Section displaying title, text, images.",
+      "type": "object",
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "paragraphs": {
+          "title": "Paragraph",
+          "type": "array",
+          "items": {
+            "title": "Text",
+            "type": "object",
+            "properties": {
+              "text": {
+                "title": "Text",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "image": {
+          "title": "Image",
+          "type": "array",
+          "required": [
+            "src",
+            "alt"
+          ],
+          "items": {
+            "title": "Image",
+            "type": "object",
+            "properties": {
+              "src": {
+                "title": "Image Source",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "media-gallery"
+                }
+              },
+              "alt": {
+                "title": "Alt Text",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "ReverseAboutSection",
+    "requiredScopes": [
+      "landing"
+    ],
+    "schema": {
+      "title": "Reverse About Section",
+      "description": "Section displaying title, text, images. Has inverted image and text order.",
+      "type": "object",
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "paragraphs": {
+          "title": "Paragraph",
+          "type": "array",
+          "items": {
+            "title": "Text",
+            "type": "object",
+            "properties": {
+              "text": {
+                "title": "Text",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "image": {
+          "title": "Image",
+          "type": "array",
+          "required": [
+            "src",
+            "alt"
+          ],
+          "items": {
+            "title": "Image",
+            "type": "object",
+            "properties": {
+              "src": {
+                "title": "Image Source",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "media-gallery"
+                }
+              },
+              "alt": {
+                "title": "Alt Text",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "SubscriptionHowToSection",
+    "requiredScopes": [
+      "landing"
+    ],
+    "schema": {
+      "title": "Subscription How To Section",
+      "description": "Section showcasing multiple features with icons, titles, and descriptions.",
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "AboutFeaturesSection",
+    "requiredScopes": [
+      "landing"
+    ],
+    "schema": {
+      "title": "About Features Section",
+      "description": "Section showcasing multiple features with icons, titles, and descriptions.",
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "SubscriptionBenefitsSection",
+    "requiredScopes": [
+      "landing"
+    ],
+    "schema": {
+      "title": "Subscription Benefitis Section",
+      "description": "Section showcasing multiple benefitis titles and descriptions.",
+      "type": "object",
+      "properties": {}
+    }
+  },
+
+
+  
+  {
+    "name": "ProductGallery",
+    "requiredScopes": [
+      "plp",
+      "search"
+    ],
+    "schema": {
+      "title": "Product Gallery traduzido",
+      "description": "Short description for the the section's purpose",
+      "type": "object",
+      "required": [
+        "filter"
+      ],
+      "properties": {
+        "sortBySelector": {
+          "title": "Sort",
+          "type": "object",
+          "properties": {
+            "label": {
+              "title": "Label",
+              "type": "string"
+            },
+            "options": {
+              "title": "Options",
+              "type": "object",
+              "properties": {
+                "price_desc": {
+                  "title": "price_desc",
+                  "type": "string",
+                  "default": "Maiores Preços"
+                },
+                "price_asc": {
+                  "title": "price_asc",
+                  "type": "string",
+                  "default": "Menores Preços"
+                },
+                "orders_desc": {
+                  "title": "orders_desc",
+                  "type": "string",
+                  "default": "Mais Vendidos"
+                },
+                "name_asc": {
+                  "title": "name_asc",
+                  "type": "string",
+                  "default": "Nome, A-Z"
+                },
+                "name_desc": {
+                  "title": "name_desc",
+                  "type": "string",
+                  "default": "Nome, Z-A"
+                },
+                "release_desc": {
+                  "title": "release_desc",
+                  "type": "string",
+                  "default": "Data de lançamento"
+                },
+                "discount_desc": {
+                  "title": "discount_desc",
+                  "type": "string",
+                  "default": "Desconto"
+                },
+                "score_desc": {
+                  "title": "score_desc",
+                  "type": "string",
+                  "default": "Relevância"
+                }
+              }
+            }
+          }
+        },
+        "searchTermLabel": {
+          "title": "Search page term label",
+          "type": "string",
+          "default": "Mostrando resultados para:"
+        },
+        "totalCountLabel": {
+          "title": "Total count label",
+          "type": "string",
+          "default": "Resultados"
+        },
+        "previousPageButton": {
+          "title": "Previous page button",
+          "type": "object",
+          "required": [
+            "icon",
+            "label"
+          ],
+          "properties": {
+            "icon": {
+              "title": "Icon",
+              "type": "object",
+              "properties": {
+                "icon": {
+                  "title": "Icon",
+                  "type": "string",
+                  "enumNames": [
+                    "ArrowLeft"
+                  ],
+                  "enum": [
+                    "ArrowLeft"
+                  ],
+                  "default": "ArrowLeft"
+                },
+                "alt": {
+                  "title": "Alternative label",
+                  "type": "string",
+                  "default": "Arrow Left icon"
+                }
+              }
+            },
+            "label": {
+              "title": "Previous page button",
+              "type": "string",
+              "default": "Página anterior"
+            }
+          }
+        },
+        "loadMorePageButton": {
+          "title": "Load more products Button",
+          "type": "object",
+          "required": [
+            "label"
+          ],
+          "properties": {
+            "label": {
+              "title": "Load more products label",
+              "type": "string",
+              "default": "Carregar mais produtos"
+            }
+          }
+        },
+        "filter": {
+          "title": "Filter",
+          "type": "object",
+          "required": [
+            "title",
+            "mobileOnly"
+          ],
+          "properties": {
+            "title": {
+              "title": "Filter title",
+              "type": "string",
+              "default": "Filtros"
+            },
+            "mobileOnly": {
+              "title": "Mobile Only",
+              "type": "object",
+              "required": [
+                "filterButton",
+                "clearButtonLabel",
+                "applyButtonLabel"
+              ],
+              "properties": {
+                "filterButton": {
+                  "title": "Show filter button",
+                  "type": "object",
+                  "required": [
+                    "label",
+                    "icon"
+                  ],
+                  "properties": {
+                    "label": {
+                      "title": "Label",
+                      "type": "string",
+                      "default": "Filtros"
+                    },
+                    "icon": {
+                      "title": "Icon",
+                      "type": "object",
+                      "required": [
+                        "icon",
+                        "alt"
+                      ],
+                      "properties": {
+                        "icon": {
+                          "title": "Icon",
+                          "type": "string",
+                          "enumNames": [
+                            "FadersHorizontal"
+                          ],
+                          "enum": [
+                            "FadersHorizontal"
+                          ],
+                          "default": "FadersHorizontal"
+                        },
+                        "alt": {
+                          "title": "Alternative label",
+                          "type": "string",
+                          "default": "Abrir filtros"
+                        }
+                      }
+                    }
+                  }
+                },
+                "clearButtonLabel": {
+                  "title": "Clear button label",
+                  "type": "string",
+                  "default": "Limpar"
+                },
+                "applyButtonLabel": {
+                  "title": "Apply button label",
+                  "type": "string",
+                  "default": "Aplicar"
+                }
+              }
+            }
+          }
+        },
+        "productCard": {
+          "title": "Product Card Configuration",
+          "type": "object",
+          "properties": {
+            "showDiscountBadge": {
+              "title": "Show discount badge?",
+              "type": "boolean",
+              "default": true
+            },
+            "bordered": {
+              "title": "Cards should be bordered?",
+              "type": "boolean",
+              "default": true
+            }
+          }
+        },
+        "emptyGallery": {
+          "title": "Empty Gallery",
+          "type": "object",
+          "properties": {
+            "title": {
+              "title": "Title",
+              "type": "string",
+              "default": "Nenhum produto encontrado"
+            },
+            "firstButton": {
+              "title": "First Button",
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "title": "Label",
+                  "default": "Ir para o início"
+                },
+                "url": {
+                  "type": "string",
+                  "title": "URL",
+                  "default": "/"
+                },
+                "icon": {
+                  "title": "Icon",
+                  "type": "string",
+                  "default": "CircleWavyWarning"
+                }
+              }
+            },
+            "secondButton": {
+              "title": "Second Button",
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "title": "Label",
+                  "default": "Acabou de chegar"
+                },
+                "url": {
+                  "type": "string",
+                  "title": "URL",
+                  "default": "/"
+                },
+                "icon": {
+                  "title": "Icon",
+                  "type": "string",
+                  "default": "RocketLaunch"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
