@@ -911,19 +911,15 @@
   resolved "https://registry.yarnpkg.com/@faststore/lighthouse/-/lighthouse-3.5.0.tgz#43b809ce5a7e4e5691560f2571822efc6a03749d"
   integrity sha512-4XO+j6J+2zPLRMHxjsZkJYCJMz8skyWGjvumwnYZFrJ8jLtb6dzm25w57G278FcmgtH3ZWn/POff8Mdcu5/bTw==
 
-"@faststore/sdk@^3.4.4":
-  version "3.4.4"
-  resolved "https://registry.yarnpkg.com/@faststore/sdk/-/sdk-3.4.4.tgz#f976b9c9f176db72bd3b3b49b2eda988c5d3bfc5"
-  integrity sha512-6Ots9PFPDnSk4Y/GrfKOfj+WakTH1zD0NDwvjr9H2uG0LB0zdYcorPjYCmoFJTkdMko09fOf/fWAjomTYu4I/w==
+"@faststore/sdk@^3.4.4", "@faststore/sdk@^3.5.0", "@faststore/sdk@^3.60.3":
+  version "3.60.3"
+  resolved "https://registry.yarnpkg.com/@faststore/sdk/-/sdk-3.60.3.tgz#c759931447706bd108a5754b7de7d7c7b40f07c6"
+  integrity sha512-zTuWAFpwtFdmoaKcN4OvR7HjIqTtEXHmXOyq+c873mjt15Yqi/XK2lDqEWK6RWDbjFkF1oWBWBwViKmk7uMOmA==
   dependencies:
+    "@types/react" "^18.2.42"
+    fast-deep-equal "^3.1.3"
     idb-keyval "^5.1.3"
-
-"@faststore/sdk@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@faststore/sdk/-/sdk-3.5.0.tgz#89c5f1218cfb78a1f1233cb397ca6fc4133b7a76"
-  integrity sha512-Nz2GOt5rLC6ooGBP9TR8V9pn5wvNEfxt88K/6H4WkoniBRXJuuELBBh45om/kj1OCXhVLBB0R6vs0NCq2b9OEA==
-  dependencies:
-    idb-keyval "^5.1.3"
+    zustand "^5.0.5"
 
 "@faststore/ui@^3.4.4":
   version "3.4.4"
@@ -7886,3 +7882,8 @@ yoctocolors-cjs@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/yoctocolors-cjs/-/yoctocolors-cjs-2.1.2.tgz#f4b905a840a37506813a7acaa28febe97767a242"
   integrity sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==
+
+zustand@^5.0.5:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-5.0.6.tgz#a2da43d8dc3d31e314279e5baec06297bea70a5c"
+  integrity sha512-ihAqNeUVhe0MAD+X8M5UzqyZ9k3FFZLBTtqo6JLPwV53cbRB/mJwBI0PxcIgqhBBHlEs8G45OTDTMq3gNcLq3A==
